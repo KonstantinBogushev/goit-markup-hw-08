@@ -1,0 +1,36 @@
+.section-one {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/bcg/hero-bcg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero {
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-content {
+  width: 700px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-one-h {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white;
+}

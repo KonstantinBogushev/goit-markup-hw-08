@@ -1,0 +1,41 @@
+.social-list {
+  list-style: none;
+  display: inline-flex;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+}
+
+.social-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: $gray;
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $white;
+    background-color: $blue;
+    border-radius: 44px;
+  }
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link:hover .comand-svg,
+.social-link:focus .comand-svg {
+  fill: $white;
+}

@@ -1,0 +1,40 @@
+.item-text {
+  display: flex;
+  list-style: none;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  padding-left: 0;
+}
+
+.item-content {
+  display: block;
+  padding-inline-start: 0px;
+  width: 270px;
+}
+
+.section-two-icon {
+  background-color: $bcg-btn;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.section-two-svg {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px;
+}
+
+.item-content:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-two-h {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $black;
+  margin-bottom: 10px;
+}

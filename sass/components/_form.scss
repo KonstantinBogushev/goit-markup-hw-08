@@ -1,0 +1,150 @@
+.form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label-name {
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $gray;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inp-name {
+  width: 448px;
+  height: 40px;
+  padding-left: 40px;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label-tel,
+.label-mail,
+.label-comment {
+  display: block;
+  margin-top: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $gray;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.inp-tel,
+.inp-mail {
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  padding-left: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-modal:focus {
+  outline: none;
+}
+
+.input-modal:focus {
+  border: 1px solid $blue;
+}
+
+.inp-comment {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inp-comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.inp-comment:focus {
+  outline: none;
+  border: 1px solid $blue;
+  border-radius: 4px;
+}
+
+.field {
+  position: relative;
+}
+
+.icon-modal {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-modal:focus + .icon-modal {
+  fill: $blue;
+}
+
+.link-check {
+  color: $blue;
+  text-decoration: underline;
+  padding-left: 5px;
+}
+
+.label-check {
+  display: inline-flex;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.inp-check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  bottom: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.icon-check {
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $black;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inp-check:checked + .icon-check {
+  background-color: $blue;
+  border-color: $blue;
+  background-image: url("../image/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.btn-form {
+  margin-top: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+.link,
+.header-contacts,
+.btm-one,
+.contacts-adress,
+.portfolio-btn,
+.contacts-footer {
+  text-decoration: none;
+}
+
+.logo,
+.section-one-h,
+.section-two-h,
+.section-three-h,
+.logo-footer,
+.portfolio-h {
+  margin-top: 0px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}

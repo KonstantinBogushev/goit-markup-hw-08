@@ -1,28 +1,56 @@
 .item-text {
-  display: flex;
   list-style: none;
-  margin-top: 94px;
-  margin-bottom: 94px;
   padding-left: 0;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
 }
 
 .item-content {
   display: block;
   padding-inline-start: 0px;
-  width: 270px;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .section-two-icon {
   background-color: $bcg-btn;
-  width: 270px;
+  width: 100%;
   height: 120px;
-  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-two-svg {
-  width: 70px;
+  width: 100%;
   height: 70px;
-  margin: 25px 100px;
+  margin-top: 25px;
 }
 
 .item-content:not(:last-child) {
@@ -37,4 +65,18 @@
   text-transform: uppercase;
   color: $black;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+.sceels-text {
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
 }

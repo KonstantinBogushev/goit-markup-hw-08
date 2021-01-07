@@ -2,12 +2,32 @@
   background-color: $bcg-color;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+  }
 }
 
 .footer {
-  display: inline-flex;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
 }
 
 .contacts-adress {
@@ -34,7 +54,16 @@
 
 .footer-container {
   display: block;
-  width: 220px;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
 }
 
 .footer-svg {
@@ -55,8 +84,19 @@
 }
 
 .social-footer {
-  width: 210px;
+  width: 100%;
   margin-left: 70px;
+
+  @media screen and(min-width: 480px) {
+    margin: 0;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and(min-width: 768px) {
+    width: 50%;
+  }
 }
 
 .footer-list {
@@ -76,6 +116,18 @@
 
 .footer-form {
   margin-left: 90px;
+
+  @media screen and (min-width: 480px) {
+    margin: 0;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .form-tg-footer {
@@ -92,6 +144,10 @@
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   margin-right: 10px;
+
+  @media screen and(min-width:480px) {
+    width: 100%;
+  }
 }
 
 .inp-mail-footer::placeholder {

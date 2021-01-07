@@ -2,6 +2,16 @@
   margin-left: auto;
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    width: 160px;
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 400px;
+  }
 }
 
 .header-contacts {

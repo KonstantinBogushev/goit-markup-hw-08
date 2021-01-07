@@ -46,4 +46,17 @@
   color: $black;
 
   margin-bottom: 50px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+}
+
+.section-three {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }

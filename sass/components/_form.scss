@@ -1,7 +1,14 @@
 .form {
-  width: 448px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 
 .label-name {
@@ -17,7 +24,7 @@
 }
 
 .inp-name {
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding-left: 40px;
   margin-top: 4px;
@@ -111,6 +118,12 @@
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .inp-check {
@@ -123,6 +136,12 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .icon-check {
@@ -131,9 +150,17 @@
   height: 15px;
   border: 2px solid $black;
   border-radius: 4px;
-  margin-right: 10px;
-  margin-left: 10px;
+
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 
 .inp-check:checked + .icon-check {
@@ -146,5 +173,6 @@
 
 .btn-form {
   margin-top: 30px;
+  margin-bottom: 40px;
   cursor: pointer;
 }

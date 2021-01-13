@@ -19,7 +19,7 @@
         <a class="link" href="./index.html"
         ><h1 class="logo"><span class="logo-web">Web</span>Studio</h1>
       </a>
-      <button type="button" class="mobile-menu-btn">
+      <button type="button" class="mobile-menu-btn" data-menu-open dara-menu-close>
         <svg class="mobile-menu-svg">
           <use href="./image/sprite.svg#mobile-menu"></use>
         </svg>
@@ -28,7 +28,7 @@
         </svg>
       </button>
 
-      <div class="mobile-menu">
+      <div class="mobile-menu is-open" data-menu>
       <nav class="nav">
         <ul class="header-list" >
           <li class="header-nav"><a class="link link-start" href="#studio">Студия</a></li>
@@ -458,6 +458,7 @@
 </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 
   </body>
 </html>

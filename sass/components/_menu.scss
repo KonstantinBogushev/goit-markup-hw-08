@@ -62,3 +62,27 @@
     color: $blue;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .header-container {
+    position: relative;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background-color: white;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-nav .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

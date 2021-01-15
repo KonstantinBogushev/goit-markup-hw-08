@@ -164,6 +164,27 @@ img {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .header-container {
+    position: relative;
+  }
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-nav .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .adress {
   margin-left: auto;
   display: flex;
@@ -669,6 +690,12 @@ img {
   margin-top: 30px;
   margin-bottom: 40px;
   cursor: pointer;
+}
+
+.section-one {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {

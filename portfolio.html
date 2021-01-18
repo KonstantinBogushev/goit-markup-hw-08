@@ -14,30 +14,41 @@
 
   <body>
     <!--header-->
-    <header class="header header-portfolio">
+    <header class="header">
       <div class="container header-container ">
     
         <a class="link" href="./index.html">
           <h1 class="logo"><span class="logo-web">Web</span>Studio</h1>
         </a>
-        <nav>
-          <ul class="header-list">
-            <li class="header-nav"><a class="link" href="./index.html">Студия</a></li>
-            <li class="header-nav"><a class="link link-portfolio" href="./portfolio.html">Портфолио</a></li>
-            <li class="header-nav"><a class="link" href="">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="adress">
-          <a class="header-contacts" href="mailto:info@devstudio.com">
-            <svg class="envelope-svg">
-              <use href="./image/sprite.svg#envelope"></use>
-            </svg>
-            info@devstudio.com</a>
-          <a class="header-contacts" href="tel:+380961111111">
-            <svg class="telephone-header">
-              <use href="./image/sprite.svg#smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a>
+        <button type="button" class="mobile-menu-btn" data-menu-button>
+          <svg class="mobile-menu-svg">
+            <use href="./image/sprite.svg#mobile-menu"></use>
+          </svg>
+          <svg class="mobile-menu-close-svg">
+            <use href="./image/sprite.svg#mobile-menu-close"></use>
+          </svg>
+        </button>
+    
+        <div class="mobile-menu" data-menu>
+          <nav class="nav">
+            <ul class="header-list">
+              <li class="header-nav"><a class="link link-start" href="./index.html">Студия</a></li>
+              <li class="header-nav"><a class="link" href="./portfolio.html">Портфолио</a></li>
+              <li class="header-nav"><a class="link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="adress">
+            <a class="header-contacts" href="mailto:info@devstudio.com">
+              <svg class="envelope-svg">
+                <use href="./image/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a>
+            <a class="header-contacts" href="tel:+380961111111">
+              <svg class="telephone-header">
+                <use href="./image/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </div>
         </div>
       </div>
     
@@ -247,5 +258,7 @@
       </div>
     
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

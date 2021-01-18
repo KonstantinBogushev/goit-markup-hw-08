@@ -71,6 +71,11 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
 }
 
 .portfolio-btn-text {

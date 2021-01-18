@@ -65,6 +65,11 @@
     padding-top: 118px;
     padding-bottom: 118px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-top: 200px;
+  }
 }
 
 .hero-content {
@@ -73,17 +78,18 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: width 480px) {
+  @media screen and (min-width: 480px) {
     width: 480px;
   }
 
-  @media screen and (min-width: width 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 700px;
   }
 }
+
 .section-one-h {
   font-weight: 900;
-  font-size: 44px;
+
   line-height: 1.363;
   text-align: center;
   letter-spacing: 0.06em;
@@ -93,5 +99,9 @@
   @media screen and (min-width: 480px) {
     font-size: 26px;
     line-height: 1.615;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
   }
 }

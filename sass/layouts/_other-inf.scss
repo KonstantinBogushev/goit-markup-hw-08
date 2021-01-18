@@ -35,7 +35,21 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    width: calc((100% - 60px) / 2);
+
+    width: calc((100% - 30px) / 2);
+    &:not(:nth-child(2n + 2)) {
+      margin-right: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      .item-content:not(:last-child) {
+        margin-right: 30px;
+      }
+      width: calc((100% - 90px) / 4);
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }
 }
 
@@ -51,10 +65,6 @@
   width: 100%;
   height: 70px;
   margin-top: 25px;
-}
-
-.item-content:not(:last-child) {
-  margin-right: 30px;
 }
 
 .section-two-h {

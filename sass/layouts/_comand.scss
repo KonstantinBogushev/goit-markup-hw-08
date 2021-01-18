@@ -16,6 +16,13 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .comand-table {
@@ -41,21 +48,29 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+    &:not(:nth-child(2n + 2)) {
+      margin-right: 30px;
+    }
 
-    @media screen and (min-width: 480px) {
-      margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+      width: calc((100% - 90px) / 4);
     }
   }
 
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 60px) / 2);
-    margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 .comand {

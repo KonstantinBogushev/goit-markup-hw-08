@@ -801,7 +801,7 @@ img {
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/tablet/header-tablet-x1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/tablet/header-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 60px;
@@ -1091,7 +1091,6 @@ img {
 
 .comand-table {
   list-style: none;
-  display: flex;
   padding-left: 0;
   margin: 0;
 }

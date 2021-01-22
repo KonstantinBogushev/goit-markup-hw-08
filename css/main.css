@@ -1421,7 +1421,8 @@ img {
 @media screen and (min-width: 1200px) {
   .social-footer {
     width: 210px;
-    margin-top: 60px;
+    margin-top: 75px;
+    text-align: left;
   }
 }
 
